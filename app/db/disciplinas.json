@@ -1,0 +1,25 @@
+{
+  "Disciplinas": [
+    {
+      "id": "1",
+      "nome": "Compiladores",
+      "DataInicio": "01/03/2021",
+      "Valor": "100",
+      "Optativa": "Sim"
+    },
+    {
+      "id": "2",
+      "nome": "Redes de computadores",
+      "DataInicio": "2021-03-02",
+      "Valor": "200",
+      "Optativa": "Sim"
+    },
+    {
+      "id": "3",
+      "nome": "Engenharia de ximigao",
+      "DataInicio": "2021-03-02",
+      "Valor": "300",
+      "Optativa": "Não"
+    }
+  ]
+}

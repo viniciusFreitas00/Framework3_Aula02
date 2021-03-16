@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/system.js"></script>
+    <script>
+      System.defaultJSExtensions = true;
+      System.import("js/index.js").catch((err) => console.log(err));
+    </script>
+    <title>Lista Frame 02</title>
+  </head>
+  <body>
+		<div class="container mb-4">
+      <div class="row my-4">
+        <div class="col">
+          <label for="ids">id</label>
+        </div>
+        <div class="col">
+          <input id="ids" type="number" class="form-control"></input>
+          <span class="d-none text-danger">Obrigatório*</span>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col">
+          <label for="Nome">Nome</label>
+        </div>
+        <div class="col">
+          <input id="Nome" class="form-control"></input>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col">
+          <label for="dateInicio">Data de início</label>
+        </div>
+        <div class="col">
+          <input id="dateInicio" type="date" class="form-control"></input>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col">
+          <label for="valor">Preço</label>
+        </div>
+        <div class="col">
+          <input id="valor" type="number" class="form-control"></input>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col">
+          <span>Optativa</span>
+        </div>
+        <div class="col form-group">
+          <select name="opcoes" class="form-select" id="optativa">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-around;">
+        <button class="btn btn-secondary" id="btnConsultar">Consultar</button>
+        <button class="btn btn-info" id="btnLer">Ler</button>
+        <button class="btn btn-primary" id="btnIncluir">Incluir</button>
+        <button class="btn btn-warning" id="btnAlterar">Alterar</button>
+        <button class="btn btn-danger" id="btnExcluir">Excluir</button>
+      </div>
+      <table class="table table-active" style="margin-top: 20px;">
+        <tr>
+          <th scope="col">Código</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Dt. inicio</th>
+          <th scope="col">Valor (R$)</th>
+          <th scope="col">Optativa</th>
+        </tr>
+        <tbody id="tbody">
+    
+        </tbody>
+      </table>
+    </div>
+	</body>
+</html>
